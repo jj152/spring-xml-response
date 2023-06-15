@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns=" http://www.w3.org/1999/xhtml "
+	xmlns:th=" http://www.thymeleaf.org ">
+<head>
+<title>GeeksforGeeks</title>
+<style>
+h2 {
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+}
+
+h1 {
+	color: forestgreen;
+	display: inline-block;
+}
+
+h3 {
+	width: 650px;
+	color: forestgreen;
+}
+</style>
+</head>
+<body>
+	<h1>Hello Geek : REST XML Response</h1>
+	</br>
+
+	<h2>Id :</h2>
+	<h1 th:text=" ${xml.ID} ">Replaceable text</h1>
+	</br>
+	<h2>Name :</h2>
+	<h1 th:text=" ${xml.NAME} ">Replaceable text</h1>
+	</br>
+	<h2>Date Of Birth :</h2>
+	<h1 th:text=" ${xml.DOB} ">Replaceable text</h1>
+	</br>
+	<h2>Pincode :</h2>
+	<h1 th:text=" ${xml.PINCODE} ">Replaceable text</h1>
+	</br>
+
+	<h4>Headers :</h4>
+	<h3 th:text=" ${XMLheaders} "></h3>
+</body>
+</html>
